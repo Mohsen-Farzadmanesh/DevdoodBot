@@ -20,6 +20,6 @@ python bot.py
 ```
 
 ### Links
-[Me on Telegram](https://t.me/DevdoodSupport)
-[Devdood group on Telegram](https://t.me/DevdoodGP)
+[Me on Telegram](https://t.me/DevdoodSupport)<br>
+[Devdood group on Telegram](https://t.me/DevdoodGP)<br>
 [Devdood Bot on Telegram | It's online ](https://t.me/DevdoodBOT)
