@@ -1,6 +1,6 @@
 ## Get Start
 ### USage
-This robot is written in Python language for group x in Telegram ...
+This robot is written in Python language for devdood Group in Telegram ...
 
 You can easily edit and use this source
 
