@@ -3,7 +3,7 @@
 import telebot
 from telebot import types
 
-TOKEN = ":| Its Private"
+TOKEN = "5133499740:AAFsHEl-EZcpvwfbghWNZ_qElonZgGNKaWw"
 
 app = telebot.TeleBot(TOKEN)
 
@@ -28,8 +28,10 @@ def message(user):
         UserID = user.from_user.id
         userFN = user.from_user.first_name
         msgID = user.message_id
+        chatType = user.chat.type
 
-
+        if chatType == "private":
+            app.send_message(chatID, "⭕️ این ربات برای گروه دِو دود طراحی شده است!\n\n🔗 @DevdoodGP\n\n\n📖 این ربات برای مدیریت بهتر گروه دِو دود طراحی  و ساخته شده است، شما میتوانید با فعالیت در گروه ارتقا مقام بگیرید! در ضمن این ربات اوپن سورس است میتوانید آن را در گیتهاب تماشا و ادیت کنید!\n\n🔗 [Github Repository](https://github.com/Mohsen-Farzadmanesh/DevdoodBot)\n\n💻  @DevdoodIR  💻", parse_mode="Markdown")
  
         Adminstxt = open("Admin.txt", "r", encoding="utf_8")
         Adminsread = Adminstxt.read()
@@ -42,8 +44,6 @@ def message(user):
         Locktxt = open("lock.txt", "r", encoding="utf_8")
         Lockread = Locktxt.read()
         Locktxt.close()
-
-
 
         if Lockread == "true" and UserID != 5081002694:
             app.delete_message(chatID, user.message_id)
